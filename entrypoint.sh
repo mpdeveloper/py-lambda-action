@@ -3,7 +3,7 @@
 install_zip_dependencies(){
 	echo "Installing and zipping dependencies..."
 	mkdir python
-	pip install --target=python -r requirements.txt
+	pip install --target=python/lib/python3.7/site-packages/. -r requirements.txt
 	zip -r dependencies.zip ./python
 }
 
